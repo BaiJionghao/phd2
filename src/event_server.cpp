@@ -2315,6 +2315,7 @@ static void has_dark(JObj& response, const json_value *params)
 
 static void start_create_dark(JObj& response, const json_value *params)
 {
+    //eg. message = {"method": "start_create_dark", "params":[1,0.1,0.2],"id": 2, }
     if (m_started) {
         response << jrpc_result(false);
         return;
